@@ -1493,3 +1493,7 @@
 [0mGET /images/mustache-kitten.png [33m404[0m 2.329 ms - 165[0m
 [0mGET /blog [32m200[0m 102.985 ms - 3628[0m
 [0mGET /images/mustache-kitten.png [33m404[0m 1.378 ms - 165[0m
+[0mGET /blog/new [32m200[0m 5.095 ms - 2266[0m
+[0mGET /blog/images/logo.jpg [33m404[0m 1.195 ms - 159[0m
+[0mPOST /blog/create [36m302[0m 146.843 ms - 54[0m
+[0mGET /blog [32m200[0m 96.348 ms - 3985[0m
