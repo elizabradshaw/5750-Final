@@ -1,0 +1,14 @@
+<h1><span>Admin</span></h1>
+<form action="/users/admin" method="post">
+    <% users.forEach((user, index) => { %>
+      <div>
+        <label>Full Name: <%= user.firstName %> <%= user.lastName %></label>
+        <label>Email: <%= user.email %></label>
+        <input type="hidden" name="users[<%= index %>][id]" value="<%= user._id %>">
+        <label>Admin:
+          <input type="checkbox" name="users[<%= index %>][admin]" <%= user.admin ? 'checked' : '' %>>
+        </label>
+      </div>
+    <% }) %>
+    <input type="submit" name="Confirm Admin Privileges" id="Confirm Admin Privileges" value="Confirm Admin Privileges">
+  </form>

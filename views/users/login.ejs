@@ -1,0 +1,31 @@
+<h1><span>Login</span></h1>
+
+<form action="/users/login" method="POST">
+  <label for="email">
+    <input type="email" name="email" id="email" placeholder="email" required />
+  </label>
+  <label for="password">
+    <input type="password" name="password" id="password" placeholder="password" required />
+  </label>
+  <input type="submit" value="Submit" />
+  <p><a href="/users/register">New here? Create an account!</a></p>
+</form>
+<% if (messages.length> 0) {
+  for (message of messages) { %>
+  <h2>
+    <%=message%>
+  </h2>
+  <% }} %>
+    <div>
+      <h2>Admin Login Info (for testing purposes)</h2>
+      <h3>I was having issues with them not working after 24 hours so I made backups</h3>
+      <h3>Backup #1</h3>
+      <p>Email: test@test.com</p>
+      <p>Password: 8QrTPc*Z7*W*cFH</p>
+      <h3>Backup #2</h3>
+      <p>Email: eliza@eliza.com</p>
+      <p>Password: $uPK7st5*sZcN_M</p>
+      <h3>Backup #3</h3>
+      <p>Email: hello@hello.com</p>
+      <p>Password: a/N!L93TZ,vg5gD</p>
+    </div>

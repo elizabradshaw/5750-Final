@@ -1,0 +1,23 @@
+<h1><span>contact requests</span></h1>
+<table>
+
+	<thead>
+		<tr>
+			<th>Date</th>
+			<th>Name</th>
+			<th>Message</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<% contacts.forEach((contact) => { %>
+		<tr>
+			<td><%=contact.datePosted.toLocaleString()%></td>
+			<td><%=contact.name%></td>
+			<td><%=contact.shortMessage%></td>
+			<td><a href="/contacts/<%=contact._id%>/edit" class="button1">View</a></td>
+		</tr>
+		<% }) %>
+	</tbody>
+</table>
+</div>

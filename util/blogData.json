@@ -1,0 +1,20 @@
+[
+  {
+    "title": "why i grew a mustache",
+    "imageURL": "images/cutting-mustache.jpg",
+    "summary": "If you can grow a mustache, you should give it a try.",
+    "content": "You'll never know what you look like with a mustache if you don't try. I grew a mustache just to try it, and I love the way I look!"
+  },
+  {
+    "title": "in the country",
+    "imageURL": "images/in-the-country.jpg",
+    "summary": "When you need shelter.",
+    "content": "Living in the country can be tough. Growing a mustache makes you tougher. What's more, a mustache like this can help provide a shelter for your family."
+  },
+  {
+    "title": "the mustache brothers",
+    "imageURL": "images/mustache-brothers.jpg",
+    "summary": "Two brothers with mustaches",
+    "content": "If you are having difficulty connecting with your brother, ask them to grow a mustache with you. Mustaches can bring families together."
+  }
+]

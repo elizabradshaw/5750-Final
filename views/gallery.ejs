@@ -1,0 +1,15 @@
+	<h1><span>style gallery</span></h1>
+	<ul class="gallery">
+	  <li>
+		<a href="/styles/new-style">Click Here to Add A New style!</a>
+	  </li>
+	  <% styles.forEach((style)=> { %>
+		<li>
+		  <a href="styles/<%=style.titleSlug%>" name="<%=style.titleSlug%>">
+			<img src="/<%=style.imageURL%>" alt="<%=style.description%>">
+		  </a>
+		</li>
+	  <% }) %>
+	</ul>
+  </div>
+  

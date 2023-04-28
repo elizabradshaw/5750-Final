@@ -1,0 +1,12 @@
+<h1><span>Random Adorable Kittens</span></h1>
+<div class="article">
+    <h3>
+    This page calls the <a href="https://placekitten.com/" target="_blank">PlaceKitten API</a> to fetch a random kitten
+    image. Enter the desired width and height below, then click get random kitten to see an adorable kitten image 
+    (I'd recommend 1000x1000 for maximum cuteness).
+    </h3></div>
+<form action="/kittens/random-kitten" method="post">
+    <input type="number" id="width" name="width" min="1" placeholder="width" required>
+    <input type="number" id="height" name="height" min="1" placeholder="height" required>
+	<input type="submit" name="get random kitten" id="get random kitten" value="get random kitten">
+</form>

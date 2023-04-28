@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		<%=pageTitle%>
+	</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/mobile.css" media="screen and (max-width : 568px)">
+	<link rel="shortcut icon" type="image/png" href="/images/icons/icon-mustache.png" />
+	<script type="text/javascript" src="/js/mobile.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<a href="/" class="logo">
+			<img src="images/logo.jpg" alt="">
+		</a>
+		<ul id="navigation">
+			<li class="<%- path === '/' ? 'selected' : ''%>">
+				<a href="/">home</a>
+			</li>
+			<li class="<%- path.includes('about') ? 'selected' : ''%>">
+				<a href="/about">about</a>
+			</li>
+			<li class="<%- path.includes('styles') ? 'selected' : ''%>">
+				<a href="/styles">gallery</a>
+			</li>
+			<li class="<%- path.includes('blog') ? 'selected' : ''%>">
+				<a href="/blog">blog</a>
+			</li>
+			<li class="<%- path === '/external-api' ? 'selected' : ''%>">
+				<a href="/external-api">kitten</a>
+			</li>
+			<li class="<%- path === '/contacts/new' ? 'selected' : ''%>">
+				<a href="/contacts/new">contact</a>
+			</li>
+			<% if (locals.user && locals.user.admin) { %>
+				<li class="<%- path === '/contacts' ? 'selected' : ''%>">
+					<a href="/contacts">Contact List</a>
+				</li>
+				<li class="<%- path.includes('/styles/new-style') ? 'selected' : ''%>">
+					<a href="/styles/new-style">Add New Style</a>
+				</li>
+
+				<li class="<%- path === '/users/admin' ? 'selected' : ''%>">
+					<a href="/users/admin">Admin</a>
+				</li>
+				<% } %>
+					<% if (isLoggedIn) { %>
+						<li><a href="/users/logout">Logout</a></li>
+						<li>Welcome, <%= user.firstName %>!</li>
+						<% } else { %>
+							<li><a href="/users/login">Login</a></li>
+							<% } %>
+								<li>
+									<% if (locals.isLoggedIn) { %>
+								<li><a href="/users/favorite-styles">Favorite Styles</a></li>
+								<% } %>
+									</li>
+
+									</li>
+		</ul>
+	</div>
+	<div id="body">
+		<%- body %>
+	</div>
+	<div id="footer">
+		<%- include('partials/social.ejs') %>
+	</div>
+</body>
+
+</html>

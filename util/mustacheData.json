@@ -1,0 +1,11 @@
+[
+  { "title": "The Stoic", "imageURL": "images/mustache1.jpg", "description": "Experience the mustache the way it was meant to be experienced: simple." },
+  { "title": "The Actor", "imageURL": "images/mustache2.jpg", "description": "Land your next big role with this mustache-beard combo." },
+  { "title": "The Long Nose Hair", "imageURL": "images/mustache3.jpg", "description": "Wow, what an amazing mustache! Is it growing out of your nose?" },
+  { "title": "The Happy Man", "imageURL": "images/mustache4.jpg", "description": "Hide an awkward smile behind an amazing mustache." },
+  { "title": "The Flavor Saver", "imageURL": "images/mustache5.jpg", "description": "Miss the taste of last night's pizza?" },
+  { "title": "The Patch", "imageURL": "images/mustache6.jpg", "description": "Doesn't connect to the rest of the beard, but that's ok." },
+  { "title": "The Father", "imageURL": "images/mustache7.jpg", "description": "Real dads grow responsible mustaches." },
+  { "title": "The Umbrella", "imageURL": "images/mustache8.jpg", "description": "Build a shelter under this magnificient mustache." },
+  { "title": "Got Milk?", "imageURL": "images/mustache9.jpg", "description": "Nice mustache! Wait, is that chocolate milk?" }
+]

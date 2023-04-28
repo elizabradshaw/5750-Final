@@ -1,0 +1,15 @@
+<h1><span><%=style.title%></span></h1>
+<div>
+  <img src="/<%=style.imageURL%>" alt="<%=style.description%>">
+  <div class="article">
+    <h4><%=style.title%></h4>
+    <p><%=style.description%></p>
+    <% if (isLoggedIn) { %>
+		<form action="/users/save-favorite/<%=style._id%>" method="POST">
+			<input type="submit" value="Save as favorite" />
+		  </form>
+		  
+    <% } %>
+  </div>
+</div>
+</div>

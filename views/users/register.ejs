@@ -1,0 +1,25 @@
+<h1><span>Register</span></h1>
+
+<form action="/users/register" method="POST">
+  <label for="firstName">
+    <span class="text">First Name:</span>
+    <input type="text" name="firstName" id="firstName" placeholder="first name" required/>
+  </label>
+  <label for="lastName">
+    <span class="text">Last Name:</span>
+    <input type="text" name="lastName" id="lastName" placeholder="last name" required/>
+  </label>
+  <label for="email">
+    <span>E-mail:</span>
+    <input type="email" name="email" id="email" placeholder="email" required/>
+  </label>
+  <label for="password">
+    <span>Password:</span>
+    <input type="password" name="password" id="password" placeholder="password" required/>
+  </label>
+  <input type="submit" value="Submit" />
+</form>
+<% if (messages.length > 0) { 
+  for (message of messages) { %>
+    <h2><%=message%></h2>
+  <% }} %>

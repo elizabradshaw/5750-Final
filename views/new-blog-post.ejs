@@ -1,0 +1,11 @@
+<form action="/blog/create" method="post" enctype="multipart/form-data">
+  <label for="title">TITLE</label>
+  <input type="text" id="title" name="title" required>
+  <label for="image">IMAGE</label>
+  <input type="file" id="image" name="image" required />
+  <label for="summary">SUMMARY</label>
+  <textarea id="summary" name="summary" rows="10" required></textarea>
+  <label for="content">CONTENT</label>
+  <textarea id="content" name="content" rows="10" required></textarea>
+  <input type="submit" name="submit" id="submit" value="submit">
+</form>
