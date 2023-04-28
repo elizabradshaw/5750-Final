@@ -1487,3 +1487,4 @@
 [0mGET / [32m200[0m 6.577 ms - 2384[0m
 [0mGET /users/login [32m200[0m 5.958 ms - 2657[0m
 [0mGET /users/images/logo.jpg [33m404[0m 0.847 ms - 160[0m
+[0mGET / [32m200[0m 20.146 ms - 2384[0m
