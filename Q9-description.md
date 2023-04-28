@@ -2,8 +2,6 @@
 
 I created a view (with associated routing functions) that allows a user to create a new blog post.  This functionality allows users to create new blog posts with an associated image, title, summary, and content. I also used Multer to handle file uploads.
 
-I referenced BlogPostMongoose.js. This schema contained fields such as title, imageURL, summary, content, postDate, and titleSlug. 
-
 I added more functions to blogController.js. One function handled the creation of a new blog post, allowing users to upload an image and fill out a form with the necessary information. Then I added a function that rendered the 'new-blog-post' view, which displayed the form for creating a new blog post.
 
 I modified blogRoutes.js to have image upload. I added routes for rendering the form for creating a new blog post and handling the actual blog post creation.
