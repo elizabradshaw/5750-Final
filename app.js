@@ -1,6 +1,8 @@
 // Import path to construct path file names
 const path = require("path");
 
+require('dotenv').config();
+
 // Import npm libraries
 const express = require("express");
 const ejs = require("ejs");
@@ -28,7 +30,7 @@ const kittenRoutes = require('./routes/kittenRoutes');
 
 const middleware = require("./middleware")
 
-const MONGODB_URI = 'mongodb+srv://elizabrads:5750class@cluster0.vmhku3d.mongodb.net/final?retryWrites=true&w=majority';
+const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.vmhku3d.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}?retryWrites=true&w=majority`;
 
 const app = express();
 
@@ -47,7 +49,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   session({
-    secret: 'my secret',
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
     store: store
@@ -93,6 +95,6 @@ app.use(homeRoutes);
 mongoose.connect(
   MONGODB_URI
 ).then(() => {
-  app.listen(3000);
+  app.listen(process.env.PORT || 3000);
 })
 
