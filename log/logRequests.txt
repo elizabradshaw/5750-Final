@@ -1497,3 +1497,4 @@
 [0mGET /blog/images/logo.jpg [33m404[0m 1.195 ms - 159[0m
 [0mPOST /blog/create [36m302[0m 146.843 ms - 54[0m
 [0mGET /blog [32m200[0m 96.348 ms - 3985[0m
+[0mGET /blog [32m200[0m 103.121 ms - 3628[0m
